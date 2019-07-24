@@ -1,0 +1,34 @@
+{
+    "name": "phpcxy/wechat-manager",
+    "description": "wechat manager extension for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "wechat"],
+    "homepage": "https://github.com/phpcxy/wechat-manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phpcxy",
+            "email": "phpcxy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "^1.7.3",
+        "overtrue/laravel-wechat": "~4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpcxy\\WechatManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Phpcxy\\WechatManager\\WechatManagerServiceProvider"
+            ]
+        }
+    }
+}
