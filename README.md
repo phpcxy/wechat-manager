@@ -43,6 +43,11 @@ $text = WechatManager::getReply('keyword');
 ```
 即可返回该关键字设置的回复信息，如果该关键字有多个回复则会随机获取一个返回。
 
+3. 获取欢迎语回复
+```
+$text = WechatManager::getWelcomeReply();
+```
+
 使用laravel-wechat的话，可以在微信消息服务端那里这样使用
 ```
 
